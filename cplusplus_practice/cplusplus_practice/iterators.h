@@ -10,6 +10,7 @@ namespace ratalsenty
 	template <typename T>
 	class iterator
 	{
+
 	public:
 		typedef T			value_type;
 		typedef T*			pointer;
