@@ -7,6 +7,7 @@ namespace ratalsenty
 	class allocator
 	{
 	public:
+
 		typedef T			value_type;
 		typedef T*			pointer;
 		typedef const T*	const_pointer;
@@ -17,12 +18,12 @@ namespace ratalsenty
 
 		allocator() = default;
 		~allocator() {};
-		pointer allocate(size_type size, void* p = 0) 
+		pointer allocate(size_type size) 
 		{
-			T* tmp = static_cast<T*>(::operator new(size * sizeof(T)));//抛出异常未处理
+			pointer tmp = static_cast<pointer>(::operator new(size * sizeof(T)));//抛出异常未处理
 			return tmp;
 		}
-		void deallocate(pointer buffer, size_type)
+		void deallocate(pointer buffer)
 		{
 			::operator delete(buffer);
 		}

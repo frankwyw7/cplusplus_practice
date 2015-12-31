@@ -18,13 +18,10 @@
     <ClInclude Include="allocator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="iterators .h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="container_base.h">
+    <ClInclude Include="iterators.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
