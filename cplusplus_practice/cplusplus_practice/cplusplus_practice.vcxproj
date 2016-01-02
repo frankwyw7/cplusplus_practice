@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="allocator.h" />
     <ClInclude Include="iterators.h" />
+    <ClInclude Include="list.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>

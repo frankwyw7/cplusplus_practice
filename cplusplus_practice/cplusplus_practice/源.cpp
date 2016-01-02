@@ -1,6 +1,7 @@
 #include "allocator.h"
 #include "iterators.h"
 #include "vector.h"
+#include "list.h"
 #include <iostream>
 #include <string>
 
@@ -132,10 +133,19 @@ void caseC()
 	std::cout << c2[0] << std::endl;
 }
 
+
+void caseD()
+{
+	list<int> d1;
+	list<int> d2(5);
+	list<int> d3(5, 6);
+
+}
+
 int main()
 {
 	caseA();
 	caseB();
-	caseC();
-	std::cout << "aa" << std::endl;
+	//caseC();
+	caseD();
 }
